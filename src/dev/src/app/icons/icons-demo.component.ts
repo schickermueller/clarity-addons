@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018-2023 Porsche Informatik. All Rights Reserved.
+ * Copyright (c) 2018-2024 Porsche Informatik. All Rights Reserved.
  * This software is released under MIT license.
  * The full license information can be found in LICENSE in the root directory of this project.
  */
@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 import {
   accessoriesIcon,
   accessoryPartsIcon,
+  acceptanceDateIcon,
   airConditionerIcon,
   audiBrandIcon,
   awardWinnerPremiumIcon,
@@ -27,6 +28,7 @@ import {
   carWashIcon,
   certifiedRepairIcon,
   certifiedRetailerIcon,
+  completedByDateIcon,
   configuratorCommercialIcon,
   configuratorPrivateIcon,
   consumptionIcon,
@@ -55,6 +57,8 @@ import {
   gasIcon,
   hybridIcon,
   internalPartForwardIcon,
+  invoiceIcon,
+  invoiceReadyIcon,
   itemsForwardIcon,
   itemsRecieveIcon,
   loadingVolumeIcon,
@@ -70,6 +74,7 @@ import {
   paintMaterialIcon,
   paintShopIcon,
   partsForwardIcon,
+  parkingLocationIcon,
   partsIcon,
   partsNonStockForwardIcon,
   partsNonStockIcon,
@@ -82,6 +87,8 @@ import {
   powerTrainIcon,
   priceTypeSwitchIcon,
   qualifiedWorkshopIcon,
+  returnDateIcon,
+  repeatRepairIcon,
   roadsideAssistanceIcon,
   routeIcon,
   seatAirIcon,
@@ -111,6 +118,7 @@ import {
   wheelToWheelIcon,
   windscreenWashIcon,
   wrenchForwardIcon,
+  vinIcon,
 } from '@porscheinformatik/clr-addons';
 import { ClarityIcons } from '@cds/core/icon';
 
@@ -123,6 +131,7 @@ export class IconsDemo {
     airConditionerIcon,
     accessoriesIcon,
     accessoryPartsIcon,
+    acceptanceDateIcon,
     awardWinnerPremiumIcon,
     brochureIcon,
     businessCustomersCommercialIcon,
@@ -135,6 +144,7 @@ export class IconsDemo {
     carWashIcon,
     certifiedRepairIcon,
     certifiedRetailerIcon,
+    completedByDateIcon,
     configuratorCommercialIcon,
     configuratorPrivateIcon,
     consumptionIcon,
@@ -166,6 +176,7 @@ export class IconsDemo {
     offersIcon,
     onCallDutyIcon,
     openSatIcon,
+    parkingLocationIcon,
     partsIcon,
     payloadIcon,
     performanceIcon,
@@ -175,6 +186,8 @@ export class IconsDemo {
     powerIcon,
     priceTypeSwitchIcon,
     qualifiedWorkshopIcon,
+    returnDateIcon,
+    repeatRepairIcon,
     roadsideAssistanceIcon,
     routeIcon,
     seatIcon,
@@ -221,12 +234,15 @@ export class IconsDemo {
     calculatorForwardIcon,
     bundleForwardIcon,
     internalPartForwardIcon,
+    invoiceIcon,
+    invoiceReadyIcon,
     businessPartnerWithCarIcon,
     campaignIcon,
     campaignOutdatedIcon,
     externalPartForwardIcon,
     paintShopIcon,
     customersCenterIcon,
+    vinIcon,
   ];
   shapes: string[] = this.icons.map(item => item[0]).sort();
 
